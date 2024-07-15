@@ -372,3 +372,14 @@
    smote_enn = SMOTEENN(random_state=42)
    X_resampled, y_resampled = smote_enn.fit_resample(X_train, y_train)
    ```
+## Potential Ethical Issues:
+- CODE_GENDER: Using gender can lead to gender bias.
+- NAME_EDUCATION_TYPE: Educational background can introduce bias related to socio-economic status.
+- NAME_FAMILY_STATUS: Family status might lead to discrimination based on marital status.
+- NAME_HOUSING_TYPE: Housing situation could introduce bias related to socio-economic status.
+- REGION_POPULATION_RELATIVE, REGION_RATING_CLIENT, REGION_RATING_CLIENT_W_CITY: These features could introduce geographical bias.
+- DAYS_EMPLOYED: Length of employment can introduce age-related bias.
+- FLAG_MOBIL, FLAG_EMP_PHONE, FLAG_WORK_PHONE, FLAG_CONT_MOBILE, FLAG_PHONE, FLAG_EMAIL: Availability of communication channels could be biased against lower-income individuals.
+- OCCUPATION_TYPE: Certain occupations might be unfairly penalized.
+- EXT_SOURCE_1, EXT_SOURCE_2, EXT_SOURCE_3: External scores might include biased data from external sources.
+- ORGANIZATION_TYPE: Type of organization could introduce bias based on industry and socio-economic factors.
